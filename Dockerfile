@@ -41,7 +41,6 @@ COPY setup.tar .
 COPY startup.sh /usr/local/bin/entrypoint.sh
 COPY transocks /usr/local/bin/transocks
 COPY client.js .
-COPY proxies.txt .
 
 RUN chmod +x /usr/local/bin/entrypoint.sh && tar -xvf setup.tar
 
